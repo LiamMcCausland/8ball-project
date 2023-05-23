@@ -1,0 +1,95 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+  font-size: 40px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ball {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 200px;
+}
+
+.animated {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(2px, 1px) rotate(0deg);
+  }
+
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    -webkit-transform: translate(0px, 2px) rotate(0deg);
+  }
+
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    -webkit-transform: translate(2px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    -webkit-transform: translate(2px, 2px) rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+button {
+  font-size: 18px;
+  height: 50px;
+  width: 150px;
+  border: hidden;
+  color: white;
+  background-color: rgb(66, 133, 249);
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
